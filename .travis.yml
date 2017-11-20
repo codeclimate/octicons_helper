@@ -2,6 +2,13 @@ language: ruby
 rvm:
   - 2.2.2
 
+gemfile:
+  - gemfiles/Gemfile.rails-3.2.x
+  - gemfiles/Gemfile.rails-4.2.x
+  - gemfiles/Gemfile.rails-5.0.x
+  - gemfiles/Gemfile.rails-5.1.x
+  - gemfiles/Gemfile.rails-edge
+
 deploy:
   provider: rubygems
   api_key: ${RUBYGEMS_API_KEY}

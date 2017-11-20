@@ -2,12 +2,11 @@ language: ruby
 rvm:
   - 2.2.2
 
-gemfile:
-  - gemfiles/Gemfile.rails-3.2.x
-  - gemfiles/Gemfile.rails-4.2.x
-  - gemfiles/Gemfile.rails-5.0.x
-  - gemfiles/Gemfile.rails-5.1.x
-  - gemfiles/Gemfile.rails-edge
+env:
+  - RAILS_VERSION=3.2
+  - RAILS_VERSION=4.2
+  - RAILS_VERSION=5.0
+  - RAILS_VERSION=5.1
 
 deploy:
   provider: rubygems
